@@ -163,7 +163,7 @@ function nextSet() {
 	i = i + 1;
 	
 	document.getElementById("aboutContent3").innerHTML = i;
-	
+
 
 	}
 	
