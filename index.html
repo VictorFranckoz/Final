@@ -1,54 +1,60 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta charset="utf-8" /> <!--??? -->
+        <meta name="format-detection" content="telephone=no" /> <!--??? -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <!--???-->
 		
-		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!--??? -->	
 		<link rel = "stylesheet" type = "text/css" href = "format.css">   <!-- Link to style sheet named format.css -->
 		<script type="text/javascript" src="cordova.js"></script> 
-        <script type="text/javascript" src="js/index.js"></script>
-        <title>Fitness Digital Monitor</title>
+        <script type="text/javascript" src="js/index.js"></script> <!-- Including java script -->
+        <title>Fitness Digital Monitor</title> <!-- Title given can be seen in tabs on browser-->
 </head>
 	
-     <body onload="onLoad()">
+     <body onload="onLoad()"> <!--??? -->
 	 
-	 <img src= "FDMLogo.png">
+	 <img src= "FDMLogo.png"> <!--Headscreen photo --> </img>
 			<br>
 			<form action="#down">
 			<button onclick ="#down">Klik her for at gå til bunden</button>
-			</form>
+			</form> <!--Created button to go to bottom, since bluetooth list can be long -->
 			
-		
-           
-		<ul id="bleDeviceList"> </ul>  
+
+		<ul id="bleDeviceList"> </ul>  <!--Calling bluetooth devices --> 
 		<button id="refreshButton" onClick = "refreshDeviceList()">Opdater</button>
-		<br>
-		<div id="statusDiv">Status: Ikke forbundet</div>
+		<br> 
+		<div id="statusDiv">Status: Ikke forbundet</div> 
 		<div id="bleId">DeviceId:</div>
-		<div id="debugDiv"></div>
+		<div id="debugDiv"></div> <!-- ???-->
 		<br><br>
 		<button id="disconnectButton"onClick="disconnect()">Disconnect</button>
-		
+		<!--Disconnect button, not working atm. -->
 		<br><br>
-		<div id="aboutContent"> 
+		<div id="aboutContent"> </div>
 		<button id = "button2" onclick ="insertText()"> Om appen </button>
-		</div>
+		</div> <!-- Button for how to use the app  -->
 		<br><br><br>
 		Pulldown maskine:
+		
+
 	<br>
-	
+	<!-- <div id="receiveDiv"></div> -->
 		<img src= "Pulldown.png">
 		
 			<br>
-	Repetitioner: <div id="receiveDiv"></div>
-	<br><br>
-	Vægt:
-	<br><br>
+	 Repetitioner: <div id="receiveDivRep"></div>  <!-- Calling recieve div for reps -->
+	<br><br> 
+	 Vægt: <div id="receiveDivKg"></div> <!-- Calling recieve div for kg -->
+	<br><br> 
 	<div id="antalSet"></div>
-	<button id="setButton" onClick ="nextSet()"> Næste set </button>
-	<div id="down">
+	Sæt: 
+
+	<div id="aboutContent3">  </div>
+	<button id="setButton" onClick ="nextSet()"> Næste set </button> <!--Plus a set each time pressed -->
+
+	
+	<div id="down"> </div>
     </body>
 </html>
 			

@@ -147,16 +147,7 @@ function onError(reason)  {
 function insertText() {
 	document.getElementById("aboutContent").innerHTML = "Fitness Digital Monitor helps you keep track of your fitness routines: How much weight you use and how many reps and sets you take! This will help you keep track of your development as well as how much weight you used on previous workouts on the different machines. It is also great at motivating you, seeing your constant improvements";		
 	}
-function nextSet() {
 
-    
-	/* 
- document.write(res[0]+"<br/>");
- document.write(res[1]);
-*/
- 
-document.getElementById("antalSet").innerHTML = bytesToString("Hej" + "<br/");
-}
 
 var i = 0;
 function nextSet() {
